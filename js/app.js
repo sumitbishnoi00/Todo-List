@@ -1,19 +1,31 @@
 
 let input = document.getElementById("inputTask");
+let task = [];
 
 
 function enterBtn() {
-
+    let value = input.value.trim();
         if(input.value === ""){
             alert("Please enter something!");
             return;
         }
- 
-        input.value.trim()
+        
+        task.push(value);
+        showTask();
 
+        input.value = "";
+
+}
+
+    function showTask(){
+        let list = document.getElementById("listArr");
+        list.innerHTML = "";
+        
+     task.map ((task, index) => {  
         let li = document.createElement("li");
-    li.innerText = input.value;
-    document.getElementById("listArr").appendChild(li);
+        li.innerText = task;
 
-    input.value = "";
+    list.appendChild(li);
+
+    });
 }
