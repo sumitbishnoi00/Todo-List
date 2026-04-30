@@ -7,7 +7,7 @@ section {
 }
 
 .container {
-    max-width: 615px;
+    max-width: 1040px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -47,7 +47,40 @@ input {
     outline: none;
 }
 
-button {
+.enter-btn {
+    width: 185px;
+    height: 70px;
+    border-radius: 150px;
+
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+.pop-btn {
+    width: 185px;
+    height: 70px;
+    border-radius: 150px;
+
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    cursor: pointer;
+    transition: all 400ms;
+}
+.delete-btn{
     width: 185px;
     height: 70px;
     border-radius: 150px;
@@ -82,6 +115,16 @@ li {
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+li span:first-child{
+    cursor: pointer;
+}
+.remove-btn{
+    cursor: pointer;
+    font-size: 16px;
 }
 
 @media (max-width: 576px) {

@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/todo-list.png">
     <!-- Primary Meta Tags -->
@@ -38,7 +37,9 @@
             <h1>Todo List</h1>
             <div class="input-box">
                 <input type="text" id="inputTask" placeholder="Enter Value">
-                <button onclick="enterBtn()">Enter</button>
+                <button class="enter-btn" onclick="enterBtn()">Enter</button>
+                <button class="pop-btn" onclick="popBtn()">Pop</button>
+                <button class="delete-btn" onclick="deleteBtn()">Delete</button>
             </div>
             <ul id="listArr"></ul>
         </div>
